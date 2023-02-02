@@ -1,7 +1,11 @@
+from useful_functions import *
 import Character_Class
 #or from Character_Class import character
 def demo():
-        # the ": str" is a python type hint
+
+    print(do_addition(3,8))
+    print(print_loud('HELLO'))
+    # the ": str" is a python type hint
     my_name: str = "Jim"
     number: int = 167
     print(my_name, number)
@@ -44,5 +48,5 @@ def demo():
 
 
     # Press the green button in the gutter to run the script.
-    if __name__ == '__main__':
-        demo()
+if __name__ == '__main__':
+    demo()
