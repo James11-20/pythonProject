@@ -1,3 +1,5 @@
+import Character_Class
+#or from Character_Class import character
 def demo():
         # the ": str" is a python type hint
     my_name: str = "Jim"
@@ -20,8 +22,27 @@ def demo():
         print(counter)
         counter+=1
 
-for index in range(10):
-    print(index,end='\n')
+    for index in range(10):
+        print(index,end='\n')
+    file_obj = open('text_file.txt')
+    print(type(file_obj))
+    print(file_obj)
+    print(file_obj.readline())
+    print(file_obj.read())
+    file_obj.seek(10)
+
+    file_obj.close()
+
+    with open('text_file.txt','r') as file_obj2:
+        file_obj2.readline()
+
+    character = {
+        'npc_type': 'car'
+    }
+    npc1 = Character_Class.Character()
+    print(npc1)
+
+
     # Press the green button in the gutter to run the script.
     if __name__ == '__main__':
         demo()
