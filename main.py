@@ -45,7 +45,7 @@ def demo():
     }
     npc1 = Character_Class.Character()
     print(npc1)
-
+#
 
     # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
